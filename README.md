@@ -5,6 +5,11 @@ Ejercicio 2: Para verificar que la edad es valida, utilizamos un if, si es true 
 la promesa y "Permite la compra", sino lo rechaza y indica que "Debes ser mayor de edad 
 para comprarlo"
 
+Ejercicio 4: Para verificar que el monto es valido, utilizamos un if, si el monto es mayor a 0 
+nos devuelve el mensaje "Pago exitoso de : $monto", si el monto es <= 0 nos devuelve "Eror: monto
+invalido".
+
+
 Ejercicio 5: Para validar que que el usuario es valido, utilizamos un if, si es true
 resuelve la promesa y devuelve un objeto con los datos del usuario, sino lo rechaza y
 indica que las credenciales son incorrectas
