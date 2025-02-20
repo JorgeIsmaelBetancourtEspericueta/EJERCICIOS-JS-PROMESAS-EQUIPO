@@ -19,7 +19,7 @@ function checkMoney(account, amount) {
   });
 }
 
-//Promesa cuando el retiro es menor a la cantidad
+//Promesa cuando el retiro es menor a la cantidad total
 checkMoney("415678", "2000")
   .then((message) => console.log(message))
   .catch((error) => console.log(error));
