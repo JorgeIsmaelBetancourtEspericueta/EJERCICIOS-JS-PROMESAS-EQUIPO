@@ -9,13 +9,16 @@ function verifyStock(product, amount) {
         if(inventory[product] !== undefined) {
             // Verifica si la cantidad en inventario es mayor a la cantidad solicitada
             if(inventory[product] >= amount) {
+                // Procede a la compra cuando hay inventario suficiente
                 resolve("Stock available, proceed with the purchase");
             } 
             else {
+                // Rechaza la compra cuando no existe inventario suficiente
                 reject("Insufficient stock");
             }
         }
         else {
+            // Rechaza la compra cuando el producto no existe en el inventario
             reject("Non-existent product in inventory");
         }
     })

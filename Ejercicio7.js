@@ -24,6 +24,7 @@ function checkWeather(city) {
             resolve("{ " + city + ", " + db[city].temperature + ", " + db[city].condition + " }");
         }
         else {
+            // Rechaza la solicitud y devuelve el error
             reject('{ error: "City not found", code: 404 }');
         }
     })
