@@ -19,7 +19,7 @@ function checkWeather(city) {
             resolve("{ " + city + ", " + db[city].temperature + ", " + db[city].condition + " }");
         }
         else {
-            reject('{ error: "Ciudad no encontrada", codigo: 404 }');
+            reject('{ error: "City not found", code: 404 }');
         }
     })
 }

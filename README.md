@@ -9,7 +9,6 @@ Ejercicio 4: Para verificar que el monto es valido, utilizamos un if, si el mont
 nos devuelve el mensaje "Pago exitoso de : $monto", si el monto es <= 0 nos devuelve "Eror: monto
 invalido".
 
-
 Ejercicio 5: Para validar que que el usuario es valido, utilizamos un if, si es true
 resuelve la promesa y devuelve un objeto con los datos del usuario, sino lo rechaza y
 indica que las credenciales son incorrectas

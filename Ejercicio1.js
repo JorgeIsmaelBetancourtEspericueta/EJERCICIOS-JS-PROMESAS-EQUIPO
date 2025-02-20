@@ -6,9 +6,9 @@ function downloadFile(size) {
     setTimeout(() => {
       //Verificamos que el archivo sea menor a 500MB
       if (size <= 500) {
-        resolve("Descarga completada");
+        resolve("Download completed");
       } else {
-        reject("El archivo es demasiado grande");
+        reject("The file is too large");
       }
     }, 2000);
   });
