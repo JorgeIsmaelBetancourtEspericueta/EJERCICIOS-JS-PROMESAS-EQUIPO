@@ -1,3 +1,4 @@
+// Crea la base de datos de clima por ciudad
 let db = {
     Guadalajara : { 
         temperature: 25,
@@ -13,22 +14,28 @@ let db = {
     }
 }; 
 
+// Crea una función para checar el clima de una ciudad recibiendo el nombre de la ciudad como parámetro
 function checkWeather(city) {
+    // Retorna una promesa
     return new Promise((resolve, reject) => {
+        // Verifica si la ciudad existe en la base de datos
         if(db[city] !== undefined) {
+            // Devuelve la información de la ciudad, temperatura y condición
             resolve("{ " + city + ", " + db[city].temperature + ", " + db[city].condition + " }");
         }
         else {
+            // Rechaza la petición al no encontrar la ciudad
             reject('{ error: "Ciudad no encontrada", codigo: 404 }');
         }
     })
 }
 
+// Llama a la función enviando el nombre de una ciudad como parámetro
 checkWeather("Tepic")
     .then( (message => console.log(message)))
     .catch( (error) => console.log(error)); 
 
-    
+// Llama a la función enviando el nombre de una ciudad como parámetro
 checkWeather("Campeche")
 .then( (message => console.log(message)))
 .catch( (error) => console.log(error)); 
