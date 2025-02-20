@@ -8,7 +8,7 @@ function usernameAuthentication(username, password){
             if(username === "admin" && password ==="1234"){
                 resolve({username, role: "Administrator", message: "Login Succesfull"}); //If the user is "admin" and the password is "1234", the promise is resolved with this object
             }else{
-                rejects({error: "Incorrect credentials"}); //If the data is incorrect, the promise is rejected with this object
+                rejects({error: "Incorrect credentials, code: 401"}); //If the data is incorrect, the promise is rejected with this object
             }
         },2000)
     });

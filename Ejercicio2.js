@@ -14,12 +14,12 @@ function verifyAge(age){
     });
 }
 
-//Prueba cuando la edad es valida
+//Prueba cuando la edad es válida
 verifyAge(24)
 .then((message)=> console.log(message))
 .catch((error)=> console.log(error));
 
-//Prueba cuando la edad es invalida
+//Prueba cuando la edad es inválida
 verifyAge(17)
 .then((message)=> console.log(message))
 .catch((error)=> console.log(error));
